@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://kcsn:Natsu12345@cluster0.ri5gzxb.mongodb.net/e-commerce').then(()=>{
+mongoose.connect('process.env.MONGO').then(()=>{
     console.log('Connected to MongoDB');
 });
 
